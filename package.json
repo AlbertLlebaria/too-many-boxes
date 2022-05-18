@@ -1,0 +1,28 @@
+{
+  "name": "too-many-boxes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js -d dist",
+    "copy": "cp problems.txt dist/",
+    "start": "npm run build && node dist/index.js",
+    "problems": "npm run build && npm run copy && node dist/index.js < problems.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbertLlebaria/too-many-boxes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlbertLlebaria/too-many-boxes/issues"
+  },
+  "homepage": "https://github.com/AlbertLlebaria/too-many-boxes#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
+    "prettier": "2.6.2"
+  }
+}
